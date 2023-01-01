@@ -1,6 +1,6 @@
 import { Container,Image } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
-import image from './assets/imagem2.jpg';
+import image from '../assets/imagem2.jpg';
 
 function Inicial() {
   return (
