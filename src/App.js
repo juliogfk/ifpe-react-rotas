@@ -1,18 +1,21 @@
-// import { Container, Image } from 'react-bootstrap';
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import image from './assets/imagem.jpg';
+import React from 'react';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Inicial from './pages/Inicial';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <>      
-      <Login />
-      <Cadastro />
-      <Inicial />
+    <>
+     <Router>
+          <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/cadastro" element={<Cadastro />} />
+                <Route path="/inicial" element={<Inicial />} />
+          </Routes>
+     </Router>
     </>
+     
   );
 }
 

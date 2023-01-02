@@ -1,7 +1,8 @@
 import { Container,Image } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import image from '../assets/imagem.jpg';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Cadastro() {
   return (
@@ -24,7 +25,8 @@ function Cadastro() {
         <Form.Label style={{padding:5}}>Senha:</Form.Label>
         <Form.Control type="password" placeholder="" />
       </Form.Group>
-      <Button style={{
+      <Link to='/inicial'>
+      <button style={{
         display:'flex',
         justifyContent:'center',
         backgroundColor:'rgb(0, 105, 248)', 
@@ -37,7 +39,8 @@ function Cadastro() {
       }} 
       variant="primary" type="submit">
         Cadastrar
-      </Button>
+      </button>
+      </Link>
     </Form>
 
     </Container>
